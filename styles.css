@@ -1,0 +1,427 @@
+/********************************************************************************** GENERAL STYLES **********************************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+/* Changing Bootsrap gerneral style for "row" class*/
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+/************************************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************** SECTIONS GERNERAL STYLES *****************************************************************************/
+
+section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+/* Adding more padding on tablet / mobile.*/
+@media (max-width:992px) {
+
+    section {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+ }
+
+/* Genaral color declaration for sections with dark background. */
+.dark {
+   background-color:hsla(100,0%,0%,.6);
+}
+
+/* First type of divider. Apperars only in the header. */
+.divider {
+    width: 203px;
+    border-top: 1px solid;
+    border-color: #fff;
+    margin: 0 auto;
+    height: 1px;
+}
+
+/* Another type of divider. Apperars only in the "locations" section and only in tablet - mobile view. */
+.divider-gray {
+    width: 25%;
+    border-top: 3px solid;
+    border-color: #444349;
+    margin: 1% auto 5% auto;
+    height: 1px;
+}
+
+/* Another type of divider. Apperars only in the "q & a" section and only in tablet - mobile view. */
+.divider-gold {
+    width: 50%;
+    border-top: 3px solid;
+    border-color: #d2ba87;
+    margin: 3% auto 10% auto;
+    height: 1px;
+}
+
+/* Make separators disappear in desktop view */
+@media (min-width:992px) {
+
+    .divider-gray, .divider-gold {
+        display: none !important;
+    }
+
+ }
+
+/************************************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/**************************************************************************** TYPOGRAPHY GENERAL STYLES *****************************************************************************/
+
+.heading-grey {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    color:#444349;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.heading-gold {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    color:#d2ba87;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.small-heading-gray {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color:#444349;
+}
+
+.small-heading-gold {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color:#d2ba87;
+}
+
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color .2s ease-in-out;
+}
+
+/************************************************************************************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/************************************************************************* ADDITIONAL STYLES - BY SECTIONS **************************************************************************/
+
+/********************* header *********************/
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-wrapper {
+    text-align: center;
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    background-color: hsla(100,0%,0%,.6);
+    border-radius: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 7rem;
+    line-height: 8rem;
+    font-weight: 400;
+    color:#d2ba87;
+    margin-top: 1%;
+}
+
+h2, .hero-date {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:hsla(0,0%,100%,.9);
+    letter-spacing: 2.5px;
+    margin-bottom: 1%;
+    padding: 2% 0;
+}
+
+/* Make h2 text uppercase on desktop view.*/
+h2 {
+    text-transform: uppercase;
+}
+
+.hero-date::after, .hero-date::before {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+
+/* Changing header styles and typography on tablet / mobile.*/
+@media (max-width:992px) {
+
+    /* Make background position center on tablet / mobile view.*/
+    header {
+        background-position: 41rem;
+
+    }
+
+    .hero-wrapper {
+        width: 100%;
+        height: 20%;
+        padding: 1.5%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    h2, .hero-date {
+        font-size: 1.25rem;
+    }
+
+    /* Make h2 text back to normal on tablet / mobile view.*/
+    h2 {
+        text-transform: none;
+    }
+  
+}
+
+
+
+
+
+/********************* main *********************/
+
+main {
+    background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+}
+
+
+
+
+
+/********************* locations *********************/
+
+.locations-box {
+    text-align: center;
+}
+
+.locations-paragraph {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    color:#444349;
+    padding: 2% 0;
+    margin-top: 2%;
+}
+
+.locations-image {
+    width: 20%;
+}
+
+/* Chaniging "locations-image" size on tablet / mobile. */
+@media (max-width:992px) {
+
+    .locations-image {
+        width: 33%;
+    }
+
+ }
+
+
+
+
+
+/********************* program *********************/
+
+.programs-wrapper {
+    width: 30%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.pgold, .ulgold {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    color:#d2ba87;
+}
+
+.ulgold {
+    margin-top: 5%;
+}
+
+/* Chaniging "program-wrapper" size on tablet / mobile. */
+@media (max-width:992px) {
+
+    .programs-wrapper {
+        width: 90%;
+    }
+
+ }
+
+
+
+ 
+/********************* gifts *********************/
+
+.gift-image {
+    width: 7%;
+    padding-bottom: 2%;
+}
+
+.pgrey {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    color:#444349;
+   
+}
+
+/* Chaniging "gift-image" size and adding some margin on tablet / mobile. */
+@media (max-width:992px) {
+
+    .gift-image {
+        width: 30%;
+        margin: 5% 0;
+    }
+
+ }
+
+
+
+
+
+/********************* questions-and-answers *********************/
+
+.q-and-a {
+    text-align: left;
+    padding: 0 3%;
+}
+
+#questions-heading {
+    margin-bottom: 7%;
+}
+
+strong {
+    display: inline-block;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+/********************* contact *********************/
+
+/* Chaniging "contact" section size on tablet / mobile. */
+@media (max-width:992px) {
+
+    .contact {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+ }
+
+
+
+
+
+/********************* footer *********************/
+
+footer {
+    text-align: center;
+    padding: 2% 0;
+    background-color: #606060;
+}
+
+small {
+    font-family: 'Mulish', sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    color:#fff;
+}
+
+ /* Chaniging footer size on tablet / mobile. */
+@media (max-width:992px) {
+
+    footer {
+        width: 100%;
+        padding: 5%;
+    }
+
+ }
+
+
+
+
+
+/************************************************************************************************************************************************************************************/
+
+
+
+
+
